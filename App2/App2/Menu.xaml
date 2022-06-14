@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Menu"
+             Title="Μενού">
+
+    <Grid Margin="20,20,20,20">
+        <!-- Place new controls here -->
+       
+        
+
+        <Button Text="Νέο Παιχνίδι"
+                Grid.Row="1"
+                VerticalOptions="Start"
+                TextColor="White"
+                BackgroundColor="Black"
+                x:Name="newGame"
+                Clicked="NewGame_Clicked" />
+        
+        <Button Text="Εργασίες"
+                Grid.Row="2"
+                VerticalOptions="End"
+                TextColor="White"
+                BackgroundColor="Black"
+                x:Name="homework"
+                Clicked="Homework_Clicked"/>
+        
+        <Button Text="Βαθμολογίες"
+                Grid.Row="3"
+                VerticalOptions="Start"
+                TextColor="White"
+                BackgroundColor="Black"
+                x:Name="rankings"
+                Clicked="Rankings_Clicked"/>
+        
+        <Button Text="Ρυθμίσεις"
+                TextColor="White"
+                BackgroundColor="Black"
+                Grid.Row="4"
+                VerticalOptions="End"
+                x:Name="settings"
+                Clicked="Settings_Clicked"/>
+
+        <Label x:Name="UserIn"
+               TextColor="Black"
+               FontSize="10"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="Center"
+               BackgroundColor="White"/>
+
+
+
+    </Grid>
+
+</ContentPage>

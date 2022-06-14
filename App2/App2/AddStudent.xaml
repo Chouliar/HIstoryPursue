@@ -1,0 +1,37 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App2"
+             x:Class="App2.AddStudent"
+             Title="Προσθήκη Νέου Μαθητή">
+
+    <StackLayout Margin="20,20,20,20">
+        
+        <Entry Placeholder="Όνομα" 
+               x:Name="st_name" />
+        
+        <Entry Placeholder="Επώνυμο" 
+               x:Name="st_surname"/>
+        
+        <Entry Placeholder="Ψευδώνυμο" 
+               x:Name="st_username"/>
+        
+        <Entry Placeholder="Κωδικός" 
+               IsPassword="True"
+               x:Name="st_password"/>
+                      
+        <Entry Placeholder="Επαλήθευση Κωδικού" 
+               IsPassword="True" 
+               x:Name="st_passwordath"/>
+        
+        <Entry Placeholder="Τάξη (Αριθμός)"
+               x:Name="st_class"/>
+
+        <Button Text="Αποθήκευση"
+                TextColor="White"
+                BackgroundColor="Black"
+                x:Name="saveButton"
+                Clicked="SaveButton_Clicked"/>
+        
+    </StackLayout>
+
+</ContentPage> 

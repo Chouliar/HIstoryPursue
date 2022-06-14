@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Create"
+             Title="Δημιουργία Νέου Τμήματος">
+
+
+    <StackLayout Margin="20,20,20,20">
+
+        <Entry Placeholder="Νέο Τμήμα"
+               x:Name="new_dep"/>
+
+        <Entry Placeholder="Τάξη 1-6 (πχ Πρώτη = 1)" 
+               x:Name="forclass"/>
+
+        <Button Text="Δημιουργία"
+        TextColor="White"
+        BackgroundColor="Black"
+        x:Name="newdepButton"
+        Clicked="NewdepButton_Clicked"/>
+
+
+    </StackLayout>
+
+</ContentPage>

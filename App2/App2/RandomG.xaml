@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.RandomG"
+             Title ="Τυχαίο">
+             
+    
+    <Grid Margin="20,20,20,20">
+        
+        <Label Text="Διαλέξτε Τάξη"
+               Grid.Row="0"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               Font="Bold"
+               FontSize="Medium"
+               TextDecorations="Underline"
+               TextColor="Black"/>
+
+        <Button Text="Τρίτη"
+                Grid.Row="1"
+                VerticalOptions="Start"
+                BackgroundColor ="Black"
+                TextColor="White"
+                x:Name="Third"
+                Clicked="Third_Clicked"/>
+
+        <Button Text="Τετάρτη"
+                Grid.Row="2"
+                BackgroundColor ="Black"    
+                VerticalOptions="Start"
+                TextColor="White"
+                x:Name="Fourth"
+                Clicked="Fourth_Clicked"/>
+
+        <Button Text="Πέμπτη"
+                Grid.Row="3"
+                VerticalOptions="Start"
+                BackgroundColor ="Black"
+                TextColor="White"
+                x:Name="Fifth"
+                Clicked="Fifth_Clicked"/>
+
+        <Button Text="Έκτη"
+                Grid.Row="4"
+                BackgroundColor ="Black"
+                VerticalOptions="Start"
+                TextColor="White"
+                x:Name="Sixth"
+                Clicked="Sixth_Clicked"/>
+
+        <Button Text="Όλες"
+                Grid.Row="5"
+                BackgroundColor ="Black"
+                VerticalOptions="Start"
+                TextColor="White"
+                x:Name="All"
+                Clicked="All_Clicked"/>
+
+
+
+    </Grid>
+
+</ContentPage>

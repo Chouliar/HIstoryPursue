@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.GamePlay"
+             Title ="Νέο">
+    
+    <Grid Margin="20,20,20,20">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="40"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="ID"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Start" 
+                   x:Name="ID"/>
+            <BoxView Grid.Column="1"/>
+            <Label Grid.Column="1"
+                   Text="0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" 
+                   x:Name="Score"/>
+        </Grid>
+
+
+        <Label Text="{Binding QuestString}"
+               Grid.Row="1"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               BackgroundColor="White"
+               VerticalTextAlignment="Start"
+               HorizontalTextAlignment="Center"
+               TextColor="Black"
+               x:Name="question"/>
+
+
+        <Button Text="{Binding Ans1String}"
+                Grid.Row="2"
+                VerticalOptions="Center"
+                BackgroundColor ="Black"
+                TextColor="White"
+                x:Name="b1"
+                Clicked="B1_Clicked"/>
+        <Button Text="2"
+                Grid.Row="3"
+                BackgroundColor ="Black"    
+                VerticalOptions="Center"
+                TextColor="White"
+                x:Name="b2"
+                Clicked="B2_Clicked"/>
+
+        <Button Text="3"
+                Grid.Row="4"
+                VerticalOptions="Center"
+                BackgroundColor ="Black"
+                TextColor="White"
+                x:Name="b3"
+                Clicked="B3_Clicked"/>
+
+        <Button Text="4"
+                Grid.Row="5"
+                BackgroundColor ="Black"
+                VerticalOptions="Center"
+                TextColor="White"
+                x:Name="b4"
+                Clicked="B4_Clicked"/>
+    </Grid>
+
+</ContentPage>

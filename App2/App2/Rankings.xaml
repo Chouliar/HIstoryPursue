@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Rankings"
+             Title="Βαθμολογίες">
+
+
+
+    <Grid Margin="20,20,20,20">
+
+        <Button Text="Κανονικό"
+                Grid.Row="0"
+                VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="Black"
+                x:Name="classicRanks"
+                Clicked="ClassicRanks_Clicked" />
+
+        <Button Text="Τυχαίο"
+                TextColor="White"
+                BackgroundColor="Black"
+                Grid.Row="1"
+                VerticalOptions="Start"
+                x:Name="randomRanks"
+                Clicked="RandomRanks_Clicked" />
+
+    </Grid>
+
+
+
+
+</ContentPage>

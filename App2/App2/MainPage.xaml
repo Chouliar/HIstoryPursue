@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App2"
+             x:Class="App2.MainPage"
+             Title="History Pursue">
+            
+
+    <Grid Margin="20,20,20,20">
+        <!-- Place new controls here -->
+
+        <Label FormattedText="Βασισμένο στα βιβλία Ιστορίας του Ελληνικού Δημοτικού Σχολείου"
+               TextColor="LightGray"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               FontSize="20"
+               BackgroundColor="White"
+               Grid.Row="0"/>
+        
+        <Button Text="Εγγραφή Νέου Καθηγητή"
+            Grid.Row="5"
+            VerticalOptions="Start"
+            TextColor="White"
+            BackgroundColor="Black"
+            x:Name="newTeacher"
+            Clicked="NewTeacher_Clicked" />
+        
+        <Button Text="Είσοδος"
+            TextColor="White"
+            BackgroundColor="Black"
+            Grid.Row="2"
+            VerticalOptions="End"
+            x:Name="LogEntry"
+            Clicked="LogEntry_Clicked"/>
+
+        <Button Text="Εγγραφή Νέου Μαθητή"
+            Grid.Row="4"    
+            VerticalOptions="Start"
+            TextColor="White"
+            BackgroundColor="Black"
+            x:Name="newStudent"
+            Clicked="NewStudent_Clicked"/>
+        
+        
+    </Grid>
+
+</ContentPage>

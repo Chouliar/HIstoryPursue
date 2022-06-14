@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.AssignMenu"
+             Title="Μενού Εργασίων">
+
+    <Grid Margin="20,20,20,20">
+     
+        <Button Text="Τρέχουσες εργασίες"
+                Grid.Row="1"
+                VerticalOptions="Start"
+                TextColor="White"
+                BackgroundColor="Black"
+                x:Name="assignments"
+                Clicked="Assignments_Clicked" />
+
+        <Button Text="{Binding Ans1String}"
+                Grid.Row="2"
+                VerticalOptions="Start"
+                BackgroundColor ="Black"
+                TextColor="White"
+                x:Name="newjoin"
+                Clicked="Newjoin_Clicked"/>
+
+        <Button Text="Νέα Εργασία"
+                TextColor="White"
+                BackgroundColor="Black"
+                Grid.Row="3"
+                VerticalOptions="End"
+                x:Name="newAssign"
+                Clicked="NewAssign_Clicked"/>
+        
+
+
+
+    </Grid>
+
+</ContentPage>

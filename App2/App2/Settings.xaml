@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Settings"
+             Title="Ρυθμίσεις">
+
+
+
+    <StackLayout Margin="20,20,20,20">
+        <!-- Place new controls here -->
+       
+        <Entry Placeholder="Νέο Ψευδώνυμο" 
+               x:Name="new_username"/>
+
+        <Entry Placeholder="Επαλήθευση Νέου Ψευδωνύμου" 
+               x:Name="new_usernameath"/>
+
+        <Button Text="Αλλαγή Ψευδωνύμου"
+        TextColor="Black"
+        BackgroundColor="White"
+        x:Name="newAliasButton"
+        Clicked="NewAliasButton_Clicked"/>
+
+        <Entry Placeholder="Nέος Κωδικός" 
+               IsPassword="True"
+               x:Name="new_password"/>
+
+        <Entry Placeholder="Επαλήθευση Νέου Κωδικού" 
+               IsPassword="True" 
+               x:Name="new_passwordath"/>
+
+        <Button Text="Αλλαγή Κωδικού"
+        TextColor="Black"
+        BackgroundColor="White"
+        x:Name="newcodeButton"
+        Clicked="NewcodeButton_Clicked"/>
+
+
+    </StackLayout>
+</ContentPage>

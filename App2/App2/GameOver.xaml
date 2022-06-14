@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.GameOver"
+             Title="Τέλος Παιχνιδιού">
+
+    <StackLayout Margin="20,20,20,20"
+                 VerticalOptions="Center">
+
+        <Label Text = "Η βαθμολογίας σας."
+               TextColor="Black"
+               BackgroundColor="White"
+               TextDecorations="Underline"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="Medium"/>
+        
+        <Label Text = "0"
+               x:Name="Score"
+               BackgroundColor="White"
+               TextColor="Red"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               TextDecorations="Underline"
+               FontAttributes="Bold"
+               FontSize="Medium"/>
+
+        <Button Text ="Menu"
+                x:Name="Menu"
+                BackgroundColor="Black"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                Clicked="Menu_Clicked"
+                />
+
+
+    </StackLayout>
+</ContentPage>
