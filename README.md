@@ -8,7 +8,8 @@ Xamarin App For Educational Purposes based on the Greek Primary School History C
 #Creator: Chouliaras G. Konstantinos
 
 #Created in Visual Studio 2021 as part of my Thesis "Implementation of an Educational Application for Students and Teachers based on the Greek Primary School History Class Curriculum"
+Thesis report in Greek: "Chouliaras_konstantinos.pdf"
 
-#Used game_db database (called in app as my_db) located in local host and accessed though MySql.
+#Used game_db database (called in app as my_db) located in local host and accessed through MySql.
 
-Never completed as a .apk can run with emulator through Visual Studio. Data base is provided.
+Never completed as an .apk only run with Visual Studio emulator.
