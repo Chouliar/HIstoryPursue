@@ -8,4 +8,4 @@ Xamarin App For Educational Purposes based on the Greek Primary School History C
 
 #Used game_db database (called in app as my_db) located in local host and accessed though MySql.
 
-Never completed as a .apk 
+Never completed as a .apk can run with emulator through Visual Studio. Data base is provided.
